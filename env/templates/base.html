@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Analytics on Fantasy Football to make the most out of your fantasy team.">
+    <link href="{{ url_for('static', filename='node_modules/bootstrap/dist/css/bootstrap.min.css') }}" rel="stylesheet">
+    <title>Fantasy Football Visuals</title>
+    <link rel="shortcut icon" href="{{ url_for('static', filename='images/favicon.ico') }}">
+   
+  {% block head %}
+ 
+  {% endblock %}
+ 
+</head>
+<body>
+  <main role="main" >
+    <div class="shadow">
+    <div class="content"> 
+    <h1 class="display-3 mycustombkhd">Fantasy Football Visuals</h1>
+      <style>
+        .mycustombkhd{
+          background: #041609;
+          color: #6ab446;
+          font: bold;
+          margin: 0rem;
+          padding: 10px;
+  }
+      </style>
+    
+    <nav class="navbar navbar-expand-md shadow-lg p-3 mb-5  mycustombk">
+        <style>
+        .mycustombk{
+          background-color: #041609;
+          border-color: #041609;
+        }
+        </style>
+        <header class="page-header header container-fluid">
+        <a class="btn btn-success"href="{{ url_for('index') }}">Home</a>
+        <a class="btn btn-success" href="{{ url_for('about') }}">About</a>
+        
+      </nav>
+    
+    
+    {% block body %}
+   {% endblock %}
+  </div>
+</div>
+  </main>
+    <footer class="footer mt-auto py-3 bg-darken-3 mycustombk margbtm">
+      <style>
+        .margbtm{
+          margin-bottom: 0;
+          margin-left: 0;
+          margin-right: 0;
+          
+        }
+      </style>
+      <div class="container">
+        <span class="text-white">The best of luck to everybody! Send me information on what you want to see for 
+          for the next graph.</span>
+          <div class="text-center">
+            <a class="btn btn-success" href="{{url_for('about') }}">About</a>
+          </div>
+          
+      </div>
+    </footer>
+   <!-- 
+   -->
+  
+  </body>
+  </html>

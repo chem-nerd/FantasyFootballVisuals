@@ -1,0 +1,36 @@
+{
+  "name": "static",
+  "version": "1.0.2",
+  "description": "ffootballchart",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack -p --progress --config webpack.config.js",
+    "dev-build": "webpack --progress -d --config webpack.config.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "webpack --progress -d --config webpack.config.js --watch"
+  },
+  "keywords": [
+    "fullstack",
+    "template",
+    "python",
+    "chart.js",
+    "npm",
+    "webpack"
+  ],
+  "author": "JohnB",
+  "license": "ISC",
+  "devDependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12"
+  },
+  "dependencies": {
+    "bootstrap": "^4.5.2",
+    "chart.js": "^2.9.3",
+    "jquery": "^3.5.1",
+    "jsdom": "^16.3.0",
+    "pandas-js": "^0.2.4",
+    "popper.js": "^1.16.1"
+  }
+}

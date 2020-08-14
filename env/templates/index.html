@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+
+{% block head %}
+
+<script type="text/javascript">
+  var jspoints = '{{ points| tojson |safe}}';
+</script>
+{% endblock %}
+<head>
+  
+</head>
+
+  
+    {% block body %}
+      <div>
+      <h1></h1>
+      
+      </div>
+  
+    </var>
+    <p class="text-center lg">These charts are to help you get the best picks on your fantasy football team. 
+      Below is a chart showing each player draft pick compared with each player's 
+      point during the 2019 season. </p>
+      <style>
+        .lg {
+        font-size: 18px;
+        }
+   </style>
+    <div >
+      
+      <canvas id="myChart2" width="400" height="200"></canvas>
+    </div>
+    <div style="width: 80%;">      
+    </div>
+<!--
+
+  
+ 
+-->
+  <script type="text/javascript" src="{{ url_for('static', filename='node_modules/jquery/dist/jquery.js') }}"></script> 
+  <script type="text/javascript" src="{{ url_for('static', filename='node_modules/chart.js/dist/Chart.js') }}"></script>        
+  <script type="text/javascript" src="{{ url_for('static', filename='js/main.js') }}"></script>  
+  
+  
+
+    {% endblock %}
+
